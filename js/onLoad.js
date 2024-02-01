@@ -13,7 +13,7 @@
 
                     document.getElementById('drop-area').innerHTML = conteudoHTML;
 
-                    // Após carregar o conteúdo, tornar os elementos .divNote draggable
+                    // Após carregar o conteúdo, tornar os elementos reutilizaveis
                     makeDivsDraggable();
                     simulateClickEvents();
                     alert("Conteúdo carregado com sucesso!");
@@ -43,10 +43,10 @@
 
     // dragUtils.js
     function makeDivsDraggable() {
-        // Obter todas as divs com a classe "divNote"
+        // Obter todas as divs com a classe "card"
         var div = document.querySelectorAll('.card');
 
-        // Iterar sobre cada divNote e torná-la draggable
+        // Iterar sobre cada div e torná-la draggable
         div.forEach(function(div) {
             makeTitleChangeable(div);
             makeElementDraggable(div);
