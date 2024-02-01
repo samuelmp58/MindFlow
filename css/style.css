@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /*background:
+    conic-gradient(from 90deg at 1px 1px,#0000 90deg,rgb(189, 189, 206) 0) 
+    0 0/50px 50px;*/
+    
+    /*width: 200px;
+    height: 160px;
+    background: url('https://i.stack.imgur.com/GySvQ.png');*/
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px; /* Largura da barra lateral */
+    background-color: #333; /* Cor de fundo da barra lateral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    color: #fff; /* Cor do texto */
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(136, 134, 134, 0.048);
+    width: 70px; /* Largura quadrada */
+    height: 70px; /* Altura quadrada */
+}
+
+.sidebar-item img {
+    width: 30px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+}
+
+.sidebar-item p {
+    color: #fff; /* Ajuste conforme necessário */
+    margin: 5px 0 0 0;
+}
+.sidebar-item:hover{
+    background-color: rgb(128, 128, 123);
+    cursor: pointer;
+}
+
+/* Main */
+
+.content {
+   
+    height: 4000px;
+    width: 4000px;
+    position: absolute;
+    z-index: -1;
+    background:
+    conic-gradient(from 90deg at 1px 1px,#0000 90deg,rgb(189, 189, 206) 0) 
+    0 0/50px 50px;
+    overflow: auto; /* Add this line to enable scrolling */
+    transition: width 0.2s, height 0.2s; /* Add transition for smooth resizing */
+}
+
+
