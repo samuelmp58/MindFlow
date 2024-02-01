@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (draggedElement === "draw") {
             newDiv = createDrawWindow("Double click");
         } else {
-            // Handle other types if needed
+            // Handle other types...
         }
 
         newDiv.style.left = (event.clientX - dropArea.getBoundingClientRect().left - 50) + "px";
